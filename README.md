@@ -12,6 +12,7 @@ you can build a package using native packager and install the package:
     sudo dpkg -i target/price-ratio-analyser_0.1-SNAPSHOT_all.deb
     
 and use the `price-ratio-analyser` command:
+    
     price-ratio-analyser <filename>
 
 
