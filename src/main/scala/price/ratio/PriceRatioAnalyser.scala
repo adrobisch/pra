@@ -32,7 +32,7 @@ case class PriceRatioAnalysis(windowEnd: Long,
 }
 
 trait PriceRatioAnalyser {
-  val InputLinePattern = "([0-9]+)\\s+(.*)\\r".r
+  val InputLinePattern = "([0-9]+)\\s+(.*)".r
 
   def analyse(file: Path): Source[PriceRatioAnalysis, _] =
     FileIO
