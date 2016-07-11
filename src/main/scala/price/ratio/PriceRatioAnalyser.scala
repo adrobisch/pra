@@ -38,8 +38,8 @@ trait PriceRatioAnalyser {
     FileIO
       .fromPath(file)
       .via(delimiter(ByteString(System.lineSeparator),
-                     maximumFrameLength = 512,
-                     allowTruncation = false))
+                     maximumFrameLength = 24,
+                     allowTruncation = true))
       .map(_.utf8String)
       .map {
         case InputLinePattern(timestamp, ratio) =>
