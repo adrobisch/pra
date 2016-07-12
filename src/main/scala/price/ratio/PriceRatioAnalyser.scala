@@ -29,6 +29,8 @@ case class PriceRatioAnalysis(windowEnd: Long,
 
   def decimalFormat(number: BigDecimal) =
     new DecimalFormat("#0.#####").format(number).padTo(7, " ").mkString
+  
+  
 }
 
 trait PriceRatioAnalyser {
